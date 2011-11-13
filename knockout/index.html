@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+		<script src="jquery.tmpl.js"></script>
+		<script src="knockout-1.2.1.js"></script>
+		
+		<script>
+			var myModel = {
+				'name' : 'Dicky Duck',
+				'age' : 87
+			};
+			
+		</script>
+	</head>
+	<body>
+		<h1>KO Demos</h1>
+		<p><span data-bind="text: name"></span> is <span data-bind="text: age"></span> years old.</p>
+	</body>
+	<script>
+	$(function() { ko.applyBindings(myModel);});
+	</script>
+</html>
